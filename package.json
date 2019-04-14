@@ -1,5 +1,5 @@
 {
-  "name": "blizznote",
+  "name": "blizzmate",
   "version": "1.0.0",
   "description": "This application is build to help people find friends with similar interests",
   "author": "Koushik",
@@ -12,8 +12,17 @@
     "start": "NODE_ENV=production node ./dist/server.generated.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
     "express": "4.16.3",
+    "express-jwt": "^5.3.1",
+    "helmet": "^3.16.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
     "mongodb": "3.0.7",
+    "mongoose": "^5.5.1",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-hot-loader": "4.1.2"
