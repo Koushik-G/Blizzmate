@@ -10,24 +10,20 @@ import {Link, withRouter} from 'react-router-dom'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
-    return {color: '#ff4081'}
+    return {color: '#ffa726'}
   else
     return {color: '#ffffff'}
 }
 const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
-      
-      <Link to="/" >
-        <Typography type="title" variant="headline" color="secondary" style={{fontFamily:'Pacifico', fontSize:"1.5rem"}}>
+      <Link to="/">
+      <Typography type="title" variant="headline" color="secondary" style={{fontFamily:'Pacifico', fontSize:"1.5rem"}}>
           Blizzmate
         </Typography>
         {/* <IconButton aria-label="Home" style={isActive(history, "/")}>
           <HomeIcon/>
         </IconButton> */}
-      </Link>
-      <Link to="/users">
-        <Button style={isActive(history, "/users")}>Users</Button>
       </Link>
       {
         !auth.isAuthenticated() && (<span>
